@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color:  #fcf3cf;
+    font-family:'Courier New', Courier, monospace;
+}
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-align: left;
+    margin-left: 3em;
+}
+p {
+    font-size: large;
+}
+
+footer {
+    position: fixed;
+    left: 1em;
+    bottom: 0;
+}
+
+.textField {
+    width: 90%;
+    height: 5em;
+    border-radius: 5px;
+    box-shadow: black;
+    margin: auto;
+    padding: auto;
+    font-size: medium;
+}
+
+#generate {
+    font-size: medium;
+    height: 3em;
+    width: 8em;
+    margin: 1em;
+    padding: auto;
+}
