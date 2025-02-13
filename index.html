@@ -8,21 +8,28 @@
 </head>
 <body>
     <h1> Coverly </h1>
+    <!-- This section for the job description input field -->
     <div>
         <p> Fill in the job description below </p>
-        <input id="description" class="textField" type="text" placeholder="This role requires...">
+        <textarea id="description" autocomplete="off" class="textField" type="text" placeholder="This role requires..."></textarea>
     </div>
     <br />
+
+    <!-- This section for the relvant experience and qualities -->
     <div>
         <p> Fill in your relevant experience and best qualities for the job below </p>
-        <input id="highlights" type="text" class="textField" placeholder="Previous management experience at company X...">
+        <textarea id="highlights" autocomplete="off" type="text" class="textField" placeholder="Previous management experience at company X..."></textarea>
     </div>
+
     <br />
     <button id="generate">Generate</button>
     <br />
+
+    <!-- Section for the generated result from the API -->
     <div>
-        <input type="text" class="textField" id="generatedResult">
+        <textarea type="text" autocomplete="off" class="textField" id="generatedResult" readonly></textarea>
     </div>
+
     <footer>
         <p> &copy 2025 - Presented by Jorge Alejandre </p>
     </footer>
