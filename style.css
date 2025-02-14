@@ -33,10 +33,18 @@ footer {
     font-size: medium;
 }
 
+#aboutDiv {
+    margin: 12rem auto;
+    padding: auto;
+    text-align: left;
+    width: 65%;
+    height: auto;
+    box-shadow: 8px 8px 5px gray;
+}
+
 input::placeholder {
     position: fixed;
     top: 0;
-
 }
 
 #generate {
