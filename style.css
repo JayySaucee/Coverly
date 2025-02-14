@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color:  #FEC06F;
+    background-color:  #f0f0f0  ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     overflow-y: auto;
@@ -30,7 +30,7 @@ footer {
     border-width: 2px;
     box-shadow: 8px 8px 5px gray;
     margin: auto;
-    font-size: medium;
+    font-size: large;
 }
 
 #aboutDiv {
@@ -54,9 +54,11 @@ footer {
 input::placeholder {
     position: fixed;
     top: 0;
+    font-size: large;
 }
 
 #generate {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     height: 3em;
     width: 8em;
@@ -65,10 +67,15 @@ input::placeholder {
     border: 2px solid black;
     border-radius: 5%;
     box-shadow: 5px 5px 3px gray;
+    background-color: white;
 }
 
 #generate:hover {
     cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+    font-size: bold;
 }
 
 #generatedResult {
@@ -83,19 +90,48 @@ input::placeholder {
   }
 
 #portfolioLink {
-    color: black;
     text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
 }
 
 #portfolioLink:hover {
-    font-weight:600;
-
+    color: #2c3e50;
 }
+
+a {
+    color: black;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: medium;
+  }
+  
+  .footerContent p {
+    margin: 0;
+    font-size:larger
+  }
+  
+  .footerContent a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+  }
+  
+  .footerContent a:hover {
+    color: #2c3e50;
+  }
 
 .loader {
     margin: 3rem auto;
-    border: 7px solid #f3f3f3;
-    border-top: 7px solid black;
+    border: 7px solid lightgray;
+    border-top: 7px solid #3498db;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
