@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-color:  #FEC06F;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     overflow-y: auto;
 }
@@ -34,12 +34,21 @@ footer {
 }
 
 #aboutDiv {
-    margin: 12rem auto;
+    margin: 9rem auto;
     padding: auto;
     text-align: left;
-    width: 65%;
+    width: 50%;
     height: auto;
-    box-shadow: 8px 8px 5px gray;
+}
+
+#writtenAbout {
+    padding: 1.5rem;
+}
+
+.aboutSection {
+    font-size: large;
+    margin: auto;
+    padding: 5px;
 }
 
 input::placeholder {
