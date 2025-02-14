@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color:  #fcf3cf;
+    background-color:  #FEC06F;
     font-family:'Courier New', Courier, monospace;
     box-sizing: border-box;
     overflow-y: auto;
@@ -16,6 +16,7 @@ p {
 }
 
 footer {
+    position: relative;
     margin-top: 10rem;
     left: 1em;
     bottom: 0;
@@ -43,17 +44,39 @@ input::placeholder {
     height: 3em;
     width: 8em;
     margin: 3em;
-    padding: auto
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 5px 5px 3px gray;
+}
+
+#generate:hover {
+    cursor: pointer;
 }
 
 #generatedResult {
     min-height: 100px;
-    resize: none;
-    
+    resize:vertical;
+    overflow-y: hidden;
     padding: 10px;
     font-size: 14px;
     line-height: 1.5;
     border: 1px solid #ccc;
     border-radius: 8px;
   }
+
+.loader {
+    margin: 3rem auto;
+    border: 7px solid #f3f3f3;
+    border-top: 7px solid black;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
   

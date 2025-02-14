@@ -19,6 +19,9 @@ function combineInputs() {
 
 /* Async function that makes the API request and returns data needed */
 async function generatedCV(promptText) {
+    const loader = document.getElementById("loader");
+    loader.style.display = "block";
+
     const GEMINI_KEY = "AIzaSyBYFvNhq_zb5hKjij5QHd1XYgSAc_FSfe0";
     const endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + GEMINI_KEY;
 
@@ -44,6 +47,8 @@ async function generatedCV(promptText) {
 
     } catch (error) {
         console.error("Fetch error: ", error);
+    } finally {
+        loader.style.display = "none";
     }
 }
 
