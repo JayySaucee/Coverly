@@ -65,6 +65,16 @@ input::placeholder {
     border-radius: 8px;
   }
 
+#portfolioLink {
+    color: black;
+    text-decoration: none;
+}
+
+#portfolioLink:hover {
+    font-weight:600;
+
+}
+
 .loader {
     margin: 3rem auto;
     border: 7px solid #f3f3f3;
