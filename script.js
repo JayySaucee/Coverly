@@ -43,7 +43,10 @@ async function generatedCV(promptText) {
         const data = await response.json();
         console.log("API response: " + data);
         const output = data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response";
-        document.getElementById("generatedResult").value = output;
+        const generatedResult = document.getElementById("generatedResult");
+        generatedResult.value = output;
+        generatedResult.dispatchEvent(new Event("input"));
+
 
     } catch (error) {
         console.error("Fetch error: ", error);
