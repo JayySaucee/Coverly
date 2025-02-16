@@ -22,18 +22,13 @@ async function generatedCV(promptText) {
     const loader = document.getElementById("loader");
     loader.style.display = "block";
 
-    const GEMINI_KEY = "AIzaSyBYFvNhq_zb5hKjij5QHd1XYgSAc_FSfe0";
-    const endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + GEMINI_KEY;
-
     try {
-        const response = await fetch(endpoint, {
+        const response = await fetch('/generate-cv', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({
-                contents: [{ parts: [{ text: promptText }] }]
-            })
+            body: JSON.stringify({ promptText })
         });
 
         if (!response.ok) {
@@ -46,7 +41,6 @@ async function generatedCV(promptText) {
         const generatedResult = document.getElementById("generatedResult");
         generatedResult.value = output;
         generatedResult.dispatchEvent(new Event("input"));
-
 
     } catch (error) {
         console.error("Fetch error: ", error);
