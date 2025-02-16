@@ -100,16 +100,16 @@ input::placeholder {
 }
 
 #generatedResult {
-    min-height: 100px;
-    resize:vertical;
-    overflow-y: hidden;
-    margin-top: 1rem;
-    padding: 2rem;
-    font-size: 14px;
-    line-height: 1.5;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
+  width: 90%;
+  height: 5em;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+  box-shadow: 8px 8px 5px gray;
+  margin: auto;
+  font-size: large;
+  padding: 1rem; /* Adjust padding to match other textareas */
+}
 
 #portfolioLink {
     text-decoration: none;
